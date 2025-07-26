@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+
+    <h1>Todo App</h1>
+
+    <section id="project-section">
+      <h2>Projects</h2>
+      <ul id="project-list"></ul>
+  
+      <form id="project-form">
+        <input type="text" id="project-name" placeholder="New project name" required />
+        <button type="submit">Add Project</button>
+      </form>
+    </section>
+  
+    <section id="todo-section" style="display: none;">
+      <h2 id="current-project-title">Todos</h2>
+      <ul id="todo-list"></ul>
+  
+      <form id="todo-form">
+        <input type="text" id="todo-title" placeholder="Title" required />
+        <input type="text" id="todo-desc" placeholder="Description" />
+        <input type="date" id="todo-dueDate" required />
+        <select id="todo-priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button type="submit">Add Todo</button>
+      </form>
+    </section>
+
+    <script src="javascript/javascript.js"></script>
+    
+</body>
+</html>
